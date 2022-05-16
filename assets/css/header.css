@@ -1,0 +1,78 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#main {
+
+}
+
+#header {
+    height: 110px;
+    background-color: rgb(0, 90, 156);
+    display: block;
+}
+
+.header-logo {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo-img {
+    float: left;
+    padding: 5px 10px;  
+}
+
+.header-logo-img img {
+    padding: 0 5px;
+}
+
+.header-logo-img .logo-student {
+    width: 50px;
+}
+
+.header-logo-img .logo-clb {
+    width: 110px;
+}
+
+.header-logo-title {
+    padding: 5px;
+    float: left;
+}
+
+.header-logo-title .logo-title {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.header-nav {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.header-nav .nav-menu {
+
+}
+
+.header-nav li {
+    padding: 10px 10px;
+    display: inline-block;
+    border-right: 1px solid rgba(0, 12, 122, 0.356);
+
+}
+
+.header-nav li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+h
