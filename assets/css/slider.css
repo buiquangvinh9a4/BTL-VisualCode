@@ -1,0 +1,13 @@
+#slider {
+
+}
+
+.slider-picture {
+    display: flex;
+    justify-content: center;
+
+}
+
+.slider-picture img {
+    width: 100%;
+}
