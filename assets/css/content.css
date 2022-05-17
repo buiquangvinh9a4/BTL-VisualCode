@@ -5,5 +5,52 @@
 }
 
 .content-heading {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.heading-box {
+    float: left;
+    margin: 0 10px;
+}
+
+.heading-box table {
+    width: 400px;
+    line-height: 1.5;
+}
+
+.heading-box .box-hd a {
+    text-decoration: none;
+    color: rgb(0, 90, 156);
+}
+
+.heading-box .box-hd i {
+    color: rgb(0, 90, 156);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.heading-box .box-hd:hover a, .heading-box .box-hd:hover i  {
     
+    color: rgb(113, 0, 128);
+}
+
+.heading-box .box-tt a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.heading-box .box-text {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    color: rgb(37, 37, 37);
+}
+
+.heading-box .box-img {
+    width: 125px;
+    border-radius: 5px;
 }
