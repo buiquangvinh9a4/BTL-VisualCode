@@ -4,6 +4,8 @@
 
 }
 
+/* Content-heading */
+
 .content-heading {
     height: 250px;
     display: flex;
@@ -47,10 +49,18 @@
     font-size: 14px;
     line-height: 1.6;
     text-align: justify;
-    color: rgb(37, 37, 37);
+    color: rgb(54, 54, 54);
 }
 
 .heading-box .box-img {
     width: 125px;
     border-radius: 5px;
+}
+
+/* Content-main */
+.content-main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }

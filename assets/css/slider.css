@@ -1,5 +1,5 @@
 #slider {
-
+    width: 100%;
 }
 
 .slider-picture {
@@ -9,6 +9,5 @@
 }
 
 .slider-picture img {
-    width: 80%;
-    min-width: 200px;
+   width: 1200px;
 }
