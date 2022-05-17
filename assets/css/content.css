@@ -1,21 +1,24 @@
 .content {
     width: auto;
-    height: 1000px;
-
+    height: auto;
 }
 
 /* Content-heading */
 
 .content-heading {
-    height: 250px;
+    height: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 10px;
+
 }
 
 .heading-box {
     float: left;
     margin: 0 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .heading-box table {
@@ -59,13 +62,85 @@
 
 /* Content-main */
 .content-main {
+    /* width: 1200px; */
     height: auto;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-around;
+}
+
+
+/* Main-left */
+.main-left {
+    width: 600px;
+}
+
+.main-left .heading {
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.main-left .box{
+    margin-bottom: 20px;
+}
+
+.main-left .box-time {
+    color:rgb(84, 84, 84);
+    font-style: italic;
+    padding: 5px 0;
+} 
+
+.main-left .box-heading {
+    padding: 5px 0 10px 0;
+}
+
+.main-left .box-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-left .box-heading:hover a {
+    color: rgb(0, 90, 156);
 }
 
 .main-left .box-img {
-    width: 125px;
+    width: 200px;
     border-radius: 5px;
 }
+
+.main-left .box-para {
+    width: auto;
+    padding: 5px;
+    line-height: 1.6;
+}
+
+.main-left .box-btn {
+    background-color: #ff9e03;
+    color: #fff;
+    width: 120px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-left .box-btn:hover {
+    background-color: rgb(255, 111, 0)
+
+}
+
+/* Main right */
+
+.main-right {
+    width: 350px;
+    height: 200px;
+}
+
+.rectangle {
+    background-color: blue;
+    width: auto;
+    height: 50px;
+}
+
+
