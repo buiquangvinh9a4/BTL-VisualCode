@@ -75,6 +75,7 @@
     cursor: pointer;
     /* border-right: 1px solid rgba(20, 35, 169, 0.356); */
     position: relative;
+    transition: all 0.2s linear;
 }
 
 .header-nav .nav-menu > li > a {
@@ -97,12 +98,14 @@
     margin-top: 10px;
     left: 0;
     display: none;
-    
 }
+
+
 
 .header-nav .sub-menu li {
     list-style: none;
     border-bottom: 1px solid rgba(1, 12, 103, 0.366);
+
 }   
 
 .header-nav .sub-menu li a {
