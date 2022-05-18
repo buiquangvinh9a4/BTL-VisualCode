@@ -4,9 +4,9 @@
     margin: 0;
 }
 
-/* body {
-    background-color: rgb(219, 216, 216);
-} */
+body {
+    background-color: #fff;
+}
 
 .clear {
     clear: both;
@@ -149,6 +149,10 @@
 .header-nav li:first-child .ti-menu-alt {
     font-size: 14px;   
 }
+
+
+/* Main-right Apps */
+
 
 
 

@@ -19,7 +19,7 @@
 
 .heading-box {
     float: left;
-    margin: 0 10px;
+    margin: 0 25px;
     border-bottom: 1px solid #ccc;
     transition: all 0.25s linear;
 
@@ -35,6 +35,7 @@
     background-color: rgb(0, 90, 156);
     border-radius: 10px;
 }
+
 .content-heading .heading-box:hover a,
 .content-heading .heading-box:hover p,
 .content-heading .heading-box:hover i{
@@ -50,10 +51,10 @@
 }
 
 .heading-box .box-hd a {
-    text-decoration: none;
     color: rgb(0, 90, 156);
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
     transition: all 0.25s linear;
 }
 
@@ -72,10 +73,10 @@
 }
 
 .heading-box .box-text {
-    font-size: 14px;
-    line-height: 1.6;
-    text-align: justify;
     color: rgb(54, 54, 54);
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
     transition: all 0.25s linear;
 }
 
@@ -90,16 +91,21 @@
     height: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 30px;
 }
 
 
 /* Main-left */
 .content-main > .main-left {
-    width: 700px;
+    width: 750px;
+    min-height: 1350px;
+
     box-shadow: 0 0 10px #ccc;
     border-bottom: 5px solid rgb(255, 111, 0);
     padding: 0 10px;
+    margin-left: -25px;
 }
 
 .main-left .heading {
@@ -108,6 +114,10 @@
 
 .main-left .box{
     margin-bottom: 40px;
+}
+
+.main-left table {
+    padding: 15px;
 }
 
 .main-left .box-time {
@@ -179,15 +189,15 @@
 
 .main-right {
     width: 500px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .main-right .notifi {
-    height: auto;
     box-shadow: 0 0 30px #cacaca;
-    padding: 15px;
-    border-bottom: 5px solid rgb(255, 196, 0);
     background-color: rgb(0, 90, 156);
+    padding: 15px 0 15px 15px;
+    border-bottom: 5px solid rgb(255, 196, 0);
+    margin-bottom: 20px;
 }
 
 .main-right .notifi h2 {
@@ -199,19 +209,16 @@
 
 .main-right .notifi-menu li{
     list-style: none;
-    padding: 10px 0;
     text-align: justify;
-    padding-right: 50px;
-    padding-left: 20px;
+    padding: 10px 50px 10px 10px;
     transition: all 0.2s linear;
 
 }
 
 .main-right .notifi-menu li a{
-    text-decoration: none;
-    color: rgb(64, 64, 64);
-    line-height: 1.6;
     color: #fff;
+    text-decoration: none;
+    line-height: 1.6;
 }
 
 
@@ -220,20 +227,21 @@
 }
 
 .main-right .notifi-menu li:hover  {
-    color: #fff;
     background-color: rgb(255, 183, 0);
+    color: #fff;
+    border-radius: 5px;
 
 }
 
 .main-right .notifi-button {
     margin-top: 10px;
-    margin-left: 90%;
+    margin-left: 85%;
 }
 
 .main-right .notifi-button a {
-    text-decoration: none;
     background-color: rgb(255, 183, 0);
     color: white;
+    text-decoration: none;
     padding: 3px;
     border-radius: 3px;
 }
@@ -242,6 +250,75 @@
 .main-right .notifi-button:hover .btn-right:hover {
     background-color: rgb(255, 74, 74);
 }
+
+/* Main-right APPS */
+.main-right .apps {
+    width: 500px;
+    height: 260px;
+    background-color: rgb(248, 248, 248);
+    padding: 5px 10px 5px 5px;
+    box-shadow: 0 0 10px #ccc;
+
+}
+
+.apps-heading {
+    height: 30px;
+    background-color: rgb(0, 90, 156);
+    padding: 5px 0;
+    border-radius: 3px;
+}
+
+.apps-heading h3 {
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.apps-left {
+    width: 160px;
+    float: left;
+}
+
+.apps-left .img-person {
+    width: 160px;
+    margin-left: 5px;
+}
+
+.apps-right {
+    width: 330px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.apps-right .app-box {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    transition: all 0.2s linear;
+}
+
+.app-box .img-apps {
+    width: 60px;
+}
+
+.app-box .cell-content {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.apps-right .app-box:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+
 
 
 
