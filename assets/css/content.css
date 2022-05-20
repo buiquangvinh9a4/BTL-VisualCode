@@ -1,8 +1,7 @@
-.content {
-    width: 1500px;
-    height: 3000px;
-
-
+#content {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: auto;
 }
 
 /* Content-heading */

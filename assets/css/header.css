@@ -6,6 +6,7 @@
 
 body {
     background-color: #fff;
+
 }
 
 .clear {
@@ -13,11 +14,11 @@ body {
 }
 
 #main {
-    width: 100%;
+
 }
 
 #header {
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: rgb(0, 90, 156);
     display: block;

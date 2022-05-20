@@ -6,6 +6,8 @@
 }
 
 .footer-info {
+    max-width: 1500px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -46,4 +48,14 @@
     padding: 5px;
     margin-right: 10px;
     border-radius: 3px;
+}
+
+.footer-location {
+    max-width: 950px;
+    margin: 0 auto;
+    height: 25px;
+}
+
+.footer-location span {
+    color: #fff;
 }
