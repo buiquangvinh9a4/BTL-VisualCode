@@ -317,6 +317,14 @@
     box-shadow: 0 0 10px #ccc;
 }
 
+ /* Main-right Calendar  */
+.main-right .calendar {
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 10px;
+    margin-top: 30px;
+}
 
 
 
