@@ -24,15 +24,25 @@ body {
     display: block;
 }
 
-.header-logo {
-    height: auto;
-    display: flex;
-    justify-content: center;
+/* Header-First -----------------------------------------*/
+
+.header-first {
+    max-width: 1300px;
+    height: 75px;
+    margin: 0 auto;
     border-bottom: 2px solid rgb(0, 75, 128);
 }
 
+/* Header-Logo -----------------------------------------*/
+
+.header-logo {
+    width: 800px;
+    float: left;
+}
+
 .header-logo-img {
-    padding: 5px 10px;  
+    padding: 5px 10px 5px 0;
+    float: left;  
 }
 
 .header-logo-img img {
@@ -49,6 +59,7 @@ body {
 }
 
 .header-logo-title {
+    float: left;
     padding: 10px 5px;
     font-size: 20px;
 }
@@ -58,6 +69,36 @@ body {
     text-transform: uppercase;
     line-height: 50px;
 }
+
+/* Header-Login -----------------------------------------*/
+
+.header-login {
+    float:right;
+    width: 150px;
+    padding: 25px;
+}
+
+.header-login .ti-user {
+    background-color: #fff;
+    color:rgb(0, 90, 156);
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.header-login span a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.2s linear;
+}
+
+.header-login span a:hover {
+    background-color: #ff9e03;
+    border-radius: 5px;
+}
+
+
+/* Header-Navigation -----------------------------------------*/
 
 .header-nav {
     display: flex;
@@ -100,8 +141,6 @@ body {
     left: 0;
     display: none;
 }
-
-
 
 .header-nav .sub-menu li {
     list-style: none;
@@ -152,7 +191,6 @@ body {
 }
 
 
-/* Main-right Apps */
 
 
 
