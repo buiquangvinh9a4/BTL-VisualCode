@@ -22,8 +22,8 @@
           <!-- Header-Logo -->
           <div class="header-logo">
             <div class="header-logo-img">
-              <img src="assets/images/logo/logo_UBHS.png" alt="Logo UBHS" title="Trường THPT Uông Bí - Quảng Ninh" class="logo-student">
-              <img src="assets/images/logo/logo_IT_white.png" alt="Logo UDC" title="UBHS Dance Club" class="logo-clb">
+              <img src="assets/images/logo/logo_UBHS.png" alt="Logo UBHS" title="Trường THPT Uông Bí - Quảng Ninh" id="logo-student">
+              <img src="assets/images/logo/logo_IT_white.png" alt="Logo UDC" title="UBHS Dance Club" id="logo-clb">
             </div>
             <div class="header-logo-title">
               <h3 class="logo-title">Uong Bi High School IT Club &nbsp; <i class="ti-desktop"></i> </h3>
@@ -31,8 +31,9 @@
           </div>
           <!-- Header-Login -->
           <div class="header-login">
-            <i class="ti-user"></i>
-            <span><a href="">Đăng nhập</a></span>
+            
+            <button class = "header-login login-btn js-login"><i class="ti-user"></i>&nbsp;Đăng nhập</button>
+
           </div>
         </div>
         <div class="clear"></div>
@@ -405,9 +406,10 @@
       </div>
     </div>
 
-    <div class="modal">
-      <div class="modal-container">
-        <div class="modal-close">
+    <!-- Modal - Giao dien dang nhap -->
+    <div class="modal js-modal">
+      <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
           <i class="ti-close"></i>
         </div>
 
@@ -417,29 +419,58 @@
         </header>
 
         <div class="modal-body">
-          <label for="name-account" class="modal-label">
-            <i class="ti-user"></i>
-            Tên tài khoản
-          </label>
-          <input id="name-account"type="text" class="modal-input" placeholder="Nhập tên tài khoản...">
-
-          <label for="pass" class="modal-label">
-            <i class="ti-user"></i>
-            Mật khẩu
-          </label>
-          <input id="pass" type="password" class="modal-input" placeholder="Nhập mật khẩu...">
-          <button id="login">
-            Đăng nhập
-          </button>
+          <form action="">
+            <label for="name-account" class="modal-label">
+              <i class="ti-user"></i>
+              Tên tài khoản
+            </label>
+            <input id="name-account"type="text" class="modal-input" placeholder="Nhập tên tài khoản...">
+  
+            <label for="pass" class="modal-label">
+              <i class="ti-user"></i>
+              Mật khẩu
+            </label>
+            <input id="pass" type="password" class="modal-input" placeholder="Nhập mật khẩu...">
+            <input id="login" type="submit" value = "Đăng nhập">
+          </form>
+          
         </div>
 
         <footer class="modal-footer">
           <span class="modal-signup">Nếu chưa có tài khoản, hãy</span>
-          <button id="signup">Đăng kí</button>
-          <span id="modal no-pass"><a href="">Quên mật khẩu</a></span>
+          <button id="login">Đăng kí</button>
+          <span id="no-pass"><a href="">Quên mật khẩu</a></span>
         </footer>
       </div>
     </div>
     
+
+    <script>
+      const loginBtn = document.querySelector('.js-login')
+      const modalClose = document.querySelector('.js-modal-close')
+      const modalContainer = document.querySelector('.js-modal-container')
+      const modal = document.querySelector('.js-modal')
+      
+      // Hàm hiển thị modal login: Thêm class open vào modal 
+      function openLogin() {
+        modal.classList.add('open')
+      }
+      // Hàm đóng modal login: Xóa class open vào modal 
+      function closeLogin() {
+        modal.classList.remove('open')
+      }
+      
+      loginBtn.addEventListener('click', openLogin )
+      
+      modalClose.addEventListener('click', closeLogin)
+    
+      // Close khi click ra ngoài
+      modal.addEventListener('click', closeLogin)
+    
+      // Ngăn không cho việc click vào modal login bị stop
+      modalContainer.addEventListener('click', function(event) {
+        event.stopPropagation()
+      })
+    </script>
 </body>
 </html>
