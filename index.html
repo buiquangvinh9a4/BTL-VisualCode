@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="stylesheet" href="assets/css/content.css">
   <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
   <title>UBHS UIC</title>
 
 </head>
@@ -402,7 +403,42 @@
           <p>Copyright © 2022 UBHS IT Club - Trường THPT Uông Bí - Quảng Ninh. All Rights Reserved.</p>
         </div>
       </div>
+    </div>
 
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-close">
+          <i class="ti-close"></i>
+        </div>
+
+        <header class="modal-header">
+          <i class="ti-world"></i>
+          Đăng nhập
+        </header>
+
+        <div class="modal-body">
+          <label for="name-account" class="modal-label">
+            <i class="ti-user"></i>
+            Tên tài khoản
+          </label>
+          <input id="name-account"type="text" class="modal-input" placeholder="Nhập tên tài khoản...">
+
+          <label for="pass" class="modal-label">
+            <i class="ti-user"></i>
+            Mật khẩu
+          </label>
+          <input id="pass" type="password" class="modal-input" placeholder="Nhập mật khẩu...">
+          <button id="login">
+            Đăng nhập
+          </button>
+        </div>
+
+        <footer class="modal-footer">
+          <span class="modal-signup">Nếu chưa có tài khoản, hãy</span>
+          <button id="signup">Đăng kí</button>
+          <span id="modal no-pass"><a href="">Quên mật khẩu</a></span>
+        </footer>
+      </div>
     </div>
     
 </body>
