@@ -1,0 +1,105 @@
+/* 
+    PC: >=1024px
+    Tablet: >=740px & < 1024px
+    Mobile: < 740px
+*/
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+    /* Header Logo */
+
+    .header-logo {
+        width: 600px;
+    }
+
+    .header-logo-title {
+        font-size: 15px;
+    }
+
+    .header-login {
+        width: 100px;
+        padding-left: 0;
+    }
+
+    .nav-menu {
+        max-width: 500px;
+    }
+
+    /* ------------------------------------------- */
+
+    /* Content-Firts */
+    .heading-box table {
+        width: 710px;
+        line-height: 1.5;
+        vertical-align: top;
+    }
+
+    /* Content-Main Main-left */
+    .content-main .main-left {
+        max-width: 690px;
+        margin-left: 0;
+    }
+
+    .heading-box .box-img {
+        width: 100px;
+        border-radius: 5px;
+    }
+
+
+    /* Content-Main Main-right Menu Notifications */
+    .main-right {
+        width: 550px;
+        margin-top: 20px;
+        margin-right: 220px;
+    }
+    .main-right .notifi {
+        padding-right: 150px;
+        margin-left: 20px;
+    }
+    .main-right .notifi-menu li {
+        width: 600px;
+    }
+    .main-right .notifi-button {
+        margin-left: 0%;
+    }
+
+    /* Main-right Menu Apps */
+    .main-right .apps {
+        width: 700px;
+        margin-left: 20px;
+    }
+    .apps-left .img-person {
+        width: 230px;
+        padding-left: 50px;
+    }
+
+    /* Main-right Calendar */
+    .main-right .calendar {
+        width: 695px;
+        margin-left: 20px;
+    }
+    
+    iframe {
+        width: 680px;
+    }
+
+    /* ------------------------------------------- */
+
+    /* Footer */
+    .footer-info {
+        max-width: 700px;
+    }
+    .footer-info .box {
+        margin-left: 0;
+    }
+    .footer-location {
+        margin-left: 50px;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    
+}

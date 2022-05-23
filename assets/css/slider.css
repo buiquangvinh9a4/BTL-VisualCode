@@ -9,5 +9,6 @@
 }
 
 .slider-picture img {
-   width: 1300px;
+    width: 1300px;
+    max-width: 100%;
 }

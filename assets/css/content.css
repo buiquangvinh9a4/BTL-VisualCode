@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 10px;
-
 }
 
 .heading-box {
@@ -21,7 +20,6 @@
     margin: 0 25px;
     border-bottom: 1px solid #ccc;
     transition: all 0.25s linear;
-
 }
 
 /* .content-heading .heading-box:hover{
@@ -197,6 +195,7 @@
     width: 500px;
     margin-left: 10px;
 }
+
 
 .main-right .notifi {
     box-shadow: 0 0 30px #cacaca;
