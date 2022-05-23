@@ -6,7 +6,6 @@
 
 body {
     background-color: #fff;
-
 }
 
 .clear {
@@ -168,6 +167,7 @@ body {
 
 
 .header-nav .header-search {
+    width: 180px;
     float:right;
     padding: 8px 10px;
 } 
@@ -175,6 +175,7 @@ body {
 .header-nav .header-search input {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    width: 100px;
     height: 20px;
     
 }
@@ -195,6 +196,73 @@ body {
 .header-nav li:first-child .ti-menu-alt {
     font-size: 14px;   
 }
+
+/* Menu no display - Display on the mobile */
+
+.header-nav .ti-menu {
+    display: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    background:rgb(0, 75, 128);
+    padding: 0 10px;
+}
+
+.menu-mobile {
+    display: none;
+
+}
+
+.open-menu {
+    display: block;
+    animation: menuMobile_FadeIn ease 0.3s; 
+}
+
+.menu-mobile > li {
+    background-color: rgb(9, 24, 35);
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.495);
+
+}
+
+.menu-mobile li a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.menu-mobile .sub-menu li {
+    padding: 15px 0 10px 20px;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.495);
+}
+
+.menu-mobile .sub-menu li:last-child {
+    padding-bottom: 0;
+    border: none;
+}
+
+.menu-mobile .sub-menu li a {
+    color: rgb(138, 138, 138);
+    font-weight: normal;
+}
+
+/* Tạo chuyển động cho Menu Mobile */
+
+@keyframes menuMobile_FadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-430px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
 
 
 

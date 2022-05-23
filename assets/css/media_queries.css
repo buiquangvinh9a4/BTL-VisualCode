@@ -4,8 +4,14 @@
     Mobile: < 740px
 */
 
+/* @media (min-width: 1028px) {
+    .header-search {
+        width: 90px;
+    }
+} */
+
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1024px) {
+@media (min-width: 740px) and (max-width: 1170px) {
     /* Header Logo */
 
     .header-logo {
@@ -28,6 +34,8 @@
     /* ------------------------------------------- */
 
     /* Content-Firts */
+
+
     .heading-box table {
         width: 710px;
         line-height: 1.5;
@@ -35,10 +43,11 @@
     }
 
     /* Content-Main Main-left */
-    .content-main .main-left {
-        max-width: 690px;
+    .content-main > .main-left {
+        width: 690px;
         margin-left: 0;
     }
+    
 
     .heading-box .box-img {
         width: 100px;
@@ -98,8 +107,154 @@
 
 }
 
+/* ------------------------------------------- */
+
 
 /* Mobile */
 @media (max-width: 739px) {
+    /* Header */
+    .header-logo {
+        width: 200px;
+    }
+    .header-logo-title,
+    .header-nav .nav-menu {
+        display: none;
+    }
+    .header-nav .nav-menu {
+        display: none;
+    }
+
+    .header-nav .header-search {
+        margin-left: 180px;
+    }
+    .header-nav .ti-menu {
+        margin-left: 20px;
+        display: block;
+    }
+
+    /* ------------------------------------------- */
+
+    /* Content */
+    #content {
+        max-width: 350px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* Content-Main-Left -------------------------*/
+    .content-main > .main-left {
+        width: 340px;
+        margin-left: 0;
+    }
+
+    .main-left .box img {
+        width: 150px;
+    }
+
+    .main-left .page-number {
+        margin-bottom: 5px;
+        margin-left: 2px;
+    }
+
+    .main-left .page-number .page {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    /* Content-Main-Right ------------------------ */
+    .main-right {
+        max-width: 350px;
+        margin: 0 auto;
+        height: auto;
+        margin: 10px 0 0 0;
+    }
+
+    /* Main-Right Notifi */
+    .main-right .notifi {
+        padding: 0;
+        height: 420px;
+    }
+    .main-right .notifi h2 {
+        padding-left: 10px;
+    }
+    .main-right .notifi-menu li{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+    
+    .main-right .notifi-button {
+        margin-top: 10px;
+    }
+
+    /* Main-Right Apps */
+    .main-right .apps {
+        width: 350px;
+        padding: 5px 0px 5px 0px;
+        box-shadow: 0 0 10px #ccc;
+    
+    }
+    .apps-heading {
+        height: 30px;
+        padding: 0;
+    }
+    
+    .apps-left .img-person {
+        width: 150px;
+    }
+    .apps-right {
+        width: 180px;
+    }
+    
+    .apps-right .app-box {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: 3px 10px;
+    }
+    
+    .app-box .img-apps {
+        width: 30px;
+    }
+    
+    .app-box .cell-content {
+        font-size: 13px;
+    }
+
+     /* Main-right Calendar  */
+    .main-right .calendar {
+        width: 330px;
+    }
+    .main-right .calendar iframe {
+        width: 320px;
+    }
+    
+    /* ------------------------------------------- */
+    /* Footer */
+    /* #footer {
+        height: 1100px;
+    } */
+    .footer-info .box:last-child {
+        margin-left: -100px;
+    }
+    .footer-location {
+        margin-left: 50px;
+    }
+    .footer-copyright {
+        height: auto;
+    }
+
+     /* ------------------------------------------- */
+     /* Modal */
+    .modal-container {
+        width: 400px;
+    }
+    .modal-input {
+        width: 88%;
+    }
+    #no-pass {
+        float: left;
+        padding: 10px 0; 
+    }
     
 }

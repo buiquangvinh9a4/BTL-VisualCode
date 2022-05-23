@@ -20,7 +20,7 @@
       <!-- Header -->
       <div id="header">
         <!-- Header-First -->
-        <div class="header-first">
+        <div class="header-first js-main-web">
           <!-- Header-Logo -->
           <div class="header-logo">
             <div class="header-logo-img">
@@ -43,16 +43,9 @@
         <!-- Header-Navigation -->
         <div class="header-nav">
           <ul class="nav-menu">
-            <li><a href="">
-              <i class="ti-menu-alt"></i>&nbsp; Danh mục</a>
-              <ul class="sub-menu">
-                <li><a href="">Giải đáp bài tập</a></li>
-                <li><a href="">Thủ thuật máy tính</a></li>
-                <li><a href="">Tin học văn phòng</a></li>
-                <li><a href="">Ngôn ngữ lập trình</a></li>
-              </ul>
+            <li>
+              <a href=""><i class="ti-home">&nbsp;</i>Trang chủ</a>
             </li>
-            <li><a href="">Trang chủ</a></li>
             <li>
               <a href="">Giới thiệu&nbsp;<i class="ti-angle-down"></i></a>
               <ul class="sub-menu">
@@ -71,13 +64,43 @@
               </ul>
             </li>
             <li><a href="">Sự kiện</a></li>
+            <li><a href="">Tài khoản</a></li>
             <li><a href="">Liên hệ</a></li>
           </ul>
+
+
+          <i class="ti-menu js-menu-click"></i>
+
           <div class="header-search">
             <input type="text" placeholder="  Tìm kiếm..." value="">
             <a href="" class="button-search"><i class="ti-search"></i> </a>
-          </div>
+          </div>          
         </div>
+        <ul class="menu-mobile js-menu-mobile">
+          <li>
+            <a href="">Trang chủ</a>
+          </li>
+          <li>
+            <a href="">Giới thiệu&nbsp;<i class="ti-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="">Mục tiêu</a></li>
+              <li><a href="">Hoạt động</a></li>
+            </ul>
+          </li>
+          <li><a href="">Thông báo</a></li>
+          <li>
+            <a href="">Học tập&nbsp;<i class="ti-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="">Giải đáp bài tập</a></li>
+              <li><a href="">Thủ thuật máy tính</a></li>
+              <li><a href="">Tin học văn phòng</a></li>
+              <li><a href="">Ngôn ngữ lập trình</a></li>
+            </ul>
+          </li>
+          <li><a href="">Sự kiện</a></li>
+          <li><a href="">Tài khoản</a></li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
 
         
       </div>
@@ -85,7 +108,7 @@
 
 
       <!-- Slider -->
-      <div id="slider">
+      <div id="slider" class = "js-main-web">
           <div class="slider-picture">
             <img src="assets/images/slides/slide1.png" title="Uong Bi High School IT Club" alt="Uong Bi High School IT Club">
           </div>
@@ -98,7 +121,7 @@
       <hr>
 
       <!-- Content -->
-      <div id="content">
+      <div id="content" class = "js-main-web">
         <!-- Content-heading -->
         <div class="content-heading">
           <div class="heading-box">
@@ -371,7 +394,7 @@
 
 
       <!-- Footer -->
-      <div id="footer">
+      <div id="footer" class = "js-main-web">
         <div class="footer-info">
           <div class="footer-info box">
             <h3 class="box-title">Liên hệ</h3>
@@ -447,6 +470,34 @@
     </div>
     
 
+    // -------------------------------------------------------------------
+
+    <!-- Ẩn hiện menu Navigation giao diện Mobile -->
+    <script>
+      const menuBtn = document.querySelector('.js-menu-click');
+      const menuMobile = document.querySelector('.js-menu-mobile');
+      const notMenus = document.querySelectorAll('.js-main-web')
+
+      // Hàm mở Menu 
+      function openMenu() {
+        menuMobile.classList.add('open-menu');
+      }
+
+      // Hàm đóng menu
+      function closeMenu() {
+        menuMobile.classList.remove('open-menu');
+      }
+
+      // Click vào nút Btn mở Menu
+      menuBtn.addEventListener('click', openMenu);
+
+      // Click ra bên ngoài đóng Menu
+      for (const notMenu of notMenus) {
+        notMenu.addEventListener('click', closeMenu);
+      }
+    </script>
+
+    <!-- Ẩn hiện menu đăng nhập tài khoản -->
     <script>
       const loginBtn = document.querySelector('.js-login')
       const modalClose = document.querySelector('.js-modal-close')

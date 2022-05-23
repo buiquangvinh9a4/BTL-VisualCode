@@ -1,5 +1,5 @@
 #content {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     height: auto;
 }
@@ -43,7 +43,7 @@
 
 
 .heading-box table {
-    width: 400px;
+    width: 370px;
     line-height: 1.5;
 }
 
@@ -96,9 +96,8 @@
 
 /* Main-left */
 .content-main > .main-left {
-    width: 750px;
+    width: 650px;
     min-height: 1350px;
-
     box-shadow: 0 0 10px #ccc;
     border-bottom: 5px solid rgb(255, 111, 0);
     padding: 0 10px;
