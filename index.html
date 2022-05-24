@@ -71,7 +71,7 @@
 
           <i class="ti-menu js-menu-click"></i>
 
-          <div class="header-search">
+          <div class="header-search js-main-web">
             <input type="text" placeholder="  Tìm kiếm..." value="">
             <a href="" class="button-search"><i class="ti-search"></i> </a>
           </div>          
@@ -487,9 +487,11 @@
       function closeMenu() {
         menuMobile.classList.remove('open-menu');
       }
-
+      
+ 
       // Click vào nút Btn mở Menu
       menuBtn.addEventListener('click', openMenu);
+      
 
       // Click ra bên ngoài đóng Menu
       for (const notMenu of notMenus) {
